@@ -10,7 +10,7 @@ import { CreatePost } from "@/app/lib/posts";
 import { Post } from "@prisma/client";
 import Navbar from "@/app/_components/Navbar";
 
-const page = () => {
+const Page = () => {
   const [form, setForm] = useState({ name: "", prompt: "", photo: "" });
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -146,4 +146,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
